@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+
+    <title>Mate o Among Us</title>
+    <!-- relacionar com o javascript-->
+    <script src="jogo.js"></script>
+    <meta charset = 'utf-8'>
+    <!-- configurar o tamanho da tela-->
+
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height:90vh;
+  }
+
+        #tela {
+          width: 500px;
+          justify-content: center;
+
+  }
+
+        h1 {
+          color:rgb(189, 17, 17);
+  }
+
+        strong{
+          font-family: 'Gill Sans', 'Gill Sans MT';
+          color: rgb(189, 17, 17);
+        }
+
+    </style>
+  </head>
+  <!-- iniciar o jogo ao carregar-->
+  <body onload = "iniciaJogo()">
+    <h1><i> Pegue o Among</i></h1>
+    <!-- tela jogo-->
+    <div id = "tela"></div>
+
+  <!-- marcador de pontos-->
+  <div>
+    <strong>Pontos:</strong>
+    <span id= "pontos">0</span>
+  </div>
+
+  <!-- marcador de tempo-->
+<div>
+    <strong>Tempo:</strong>
+    <span id= "tempo">10</span>
+segundos
+</div>
+
+  </body>
+  </html>
